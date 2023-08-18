@@ -19,7 +19,7 @@ func main() {
         Translation: "Hello",
       }
       if err := enc.Encode(resp); err != nil {
-        panic("unable to encode response", err)
+        log.Printf("unable to encode response %s\n", err)
       }
     })
   log.Printf("listening on %s\n", addr)
